@@ -15,6 +15,11 @@ const Contact = () => {
           <p className='text-gray-300 py-4'>Submit the form below or shoot me an email - napstakid@gmail.com</p>
         </div>
         <input className='bg-[#f5f5f5] p-2' type="text" placeholder='Name' name='name' />
+        <select name="work-experience">
+          <option value="one-year">0-1 years</option>
+          <option value="one-five-years">1-5 years</option>
+          <option value="five-plus-years">5+ years</option>
+        </select>
         <input className='my-4 p-2 bg-[#f5f5f5]' type="email" placeholder='Email' name='email' />
         <textarea className='bg-[#f5f5f5] p-2' name="message" rows="10" placeholder='Message'></textarea>
         <button className='text-white border-2 hover:bg-[#0e6067] hover:border-[#0e6067] px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
