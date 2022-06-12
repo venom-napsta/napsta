@@ -4,12 +4,12 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,
+  FaHome,
+  FaToggleOn,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/V.png';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -17,42 +17,50 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div>
-        <img src={Logo} alt='Logo Image' style={{ width: '50px' }} />
-      </div>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#010101] text-[#ccc]'>
+      <Link to='home' smooth={true} duration={500} className='hover:cursor-pointer ml-4'>
+        <img src={Logo} alt='Logo' style={{ width: '60px' }} />
+      </Link>
 
       {/* menu */}
-      <ul className='hidden md:flex'>
+      <ul className='lis hidden md:flex'>
         <li>
           <Link to='home' smooth={true} duration={500}>
-            Home
+            <FaHome size={26} />
           </Link>
         </li>
         <li>
           <Link to='about' smooth={true} duration={500}>
-            About
+            About 
           </Link>
         </li>
+        <span className="arrow_nav"> | </span>
         <li>
           <Link to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
+        <span className="arrow_nav"> | </span>
         <li>
           <Link to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
+        <span className="arrow_nav"> | </span>
         <li>
           <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
+      <ul>
+        <li>
+          <FaToggleOn size={38} />
+        </li>
+      </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      <div onClick={handleClick} className='hover:cursor-pointer md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -64,30 +72,30 @@ const Navbar = () => {
             : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
         }
       >
-        <li className='py-6 text-4xl'>
+        <li className='py-6 text-3xl'>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
+        <li className='py-6 text-3xl'>
           {' '}
           <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-            About
+            About Me
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
+        <li className='py-6 text-3xl'>
           {' '}
           <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
-            Skills
+            My Skills
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
+        <li className='py-6 text-3xl'>
           {' '}
           <Link onClick={handleClick} to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
+        <li className='py-6 text-3xl'>
           {' '}
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
             Contact
@@ -98,7 +106,7 @@ const Navbar = () => {
       {/* Social icons */}
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#183b7c]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='/'
@@ -106,7 +114,7 @@ const Navbar = () => {
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1a1a1a]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='/'
@@ -114,7 +122,7 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0e6067]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='/'
@@ -122,7 +130,7 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#555]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='/'
@@ -131,6 +139,9 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+      </div>
+      <div className='scroll fixed bottom-[5%] right-[5%] h-20 w-20 bg-[#36c9da]' onClick={() => window.scrollTo(0, 0)} >
+        <b>^</b>
       </div>
     </div>
   );
