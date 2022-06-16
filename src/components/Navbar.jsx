@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   FaBars,
   FaTimes,
@@ -6,49 +6,55 @@ import {
   FaLinkedin,
   FaHome,
   FaToggleOn,
-} from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Logo from '../assets/V.png';
-import { Link } from 'react-scroll';
+  FaKaggle,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import Logo from "../assets/V.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#010101] text-[#ccc]'>
-      <Link to='home' smooth={true} duration={500} className='hover:cursor-pointer ml-4'>
-        <img src={Logo} alt='Logo' style={{ width: '60px' }} />
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#010101] text-[#ccc]">
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        className="hover:cursor-pointer ml-4"
+      >
+        <img src={Logo} alt="Logo" style={{ width: "60px" }} />
       </Link>
 
       {/* menu */}
-      <ul className='lis hidden md:flex'>
+      <ul className="lis hidden md:flex">
         <li>
-          <Link to='home' smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500}>
             <FaHome size={26} />
           </Link>
         </li>
         <li>
-          <Link to='about' smooth={true} duration={500}>
-            About 
+          <Link to="about" smooth={true} duration={500}>
+            About
           </Link>
         </li>
         <span className="arrow_nav"> | </span>
         <li>
-          <Link to='skills' smooth={true} duration={500}>
+          <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <span className="arrow_nav"> | </span>
         <li>
-          <Link to='work' smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <span className="arrow_nav"> | </span>
         <li>
-          <Link to='contact' smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
@@ -60,7 +66,10 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='hover:cursor-pointer md:hidden z-10'>
+      <div
+        onClick={handleClick}
+        className="hover:cursor-pointer md:hidden z-10"
+      >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -68,80 +77,85 @@ const Navbar = () => {
       <ul
         className={
           !nav
-            ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+            ? "hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className='py-6 text-3xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+        <li className="py-6 text-3xl">
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='py-6 text-3xl'>
-          {' '}
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+        <li className="py-6 text-3xl">
+          {" "}
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About Me
           </Link>
         </li>
-        <li className='py-6 text-3xl'>
-          {' '}
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+        <li className="py-6 text-3xl">
+          {" "}
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             My Skills
           </Link>
         </li>
-        <li className='py-6 text-3xl'>
-          {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+        <li className="py-6 text-3xl">
+          {" "}
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className='py-6 text-3xl'>
-          {' '}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+        <li className="py-6 text-3xl">
+          {" "}
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
 
       {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#183b7c]'>
+          <li className="w-[160px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#183b7c]">
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              className="flex justify-between items-center w-full text-gray-300"
+              href="http://https://www.linkedin.com/in/venom-napsta/"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1a1a1a]'>
+          <li className="w-[160px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1a1a1a]">
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://github.com/venom-napsta"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0e6067]'>
+          <li className="w-[160px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[dodgerblue]">
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://www.kaggle.com/napstakid"
+            >
+              Kaggle <FaKaggle size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0e6067]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="mailto:napstakid@gmail.com"
             >
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#555]'>
+          <li className="w-[160px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[green]">
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://wa.me/263714551865"
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              WhatsApp <FaWhatsapp size={30} />
             </a>
           </li>
         </ul>
-      </div>
-      <div className='scroll fixed bottom-[5%] right-[5%] h-20 w-20 bg-[#36c9da]' onClick={() => window.scrollTo(0, 0)} >
-        <b>^</b>
       </div>
     </div>
   );

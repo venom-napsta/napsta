@@ -1,12 +1,12 @@
-.bg-image{
+.bg-image {
   box-sizing: border-box;
 }
 
-.fixed{
+.fixed {
   z-index: 1;
 }
 
-.bg-image{
+.bg-image {
   /* background properties */
   /* background-color: #0a0a0a; */
   background-image: url("../assets/kali.png");
@@ -17,57 +17,60 @@
   /* height: 65vh; */
   /* filter: blur(4px); */
   position: relative;
-  top: 80px;
 }
 
-.bg-text{
+.bg-text {
   width: 85%;
   height: 65%;
   position: absolute;
   top: 50vh;
   left: 50%;
   backdrop-filter: blur(12px);
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   /* z-index: 0; */
   /* text-align: center; */
   color: aliceblue;
-  font-weight:600;
+  font-weight: 600;
   box-shadow: 5px 5px 30px rgb(0, 100, 120);
   padding: 3rem;
   border: 2px solid rgb(24, 113, 119);
   border-radius: 8px;
   /* text-shadow: 1px 1px 1px rgb(172, 203, 209); */
 }
-.no-shadow{
+.no-shadow {
   text-shadow: none;
   font-weight: 500;
   text-decoration: none;
 }
-.contactIcons{
+.contactIcons {
   font-size: 2.5rem;
 }
+.venom {
+  /* background properties */
+  /* background-color: #0a0a0a; */
+  background-image: url("../assets/logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-@media screen and (min-width:100px) and (max-width:900px){
-  .bg-text{
+@media screen and (min-width: 100px) and (max-width: 900px) {
+  .bg-text {
     width: 100%;
     top: 50%;
     border: none;
     box-shadow: none;
-    background-color: inherit;
   }
-  .bg-image{
-    background-image: none;
-  }
-  .postTitle{
+  .postTitle {
     font-size: 1.8rem;
   }
-  .linkText{
+  .linkText {
     font-size: 0.7rem;
   }
-  .contactIcons{
+  .contactIcons {
     font-size: 1.5rem;
   }
-  .companies{
+  .venom {
     display: none;
   }
 }

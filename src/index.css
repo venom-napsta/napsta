@@ -2,33 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 @layer base {
-    body {
-        @apply font-[Raleway];
-    }
-    li {
-        @apply px-4;
-        @apply cursor-pointer
-    }
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
 }
-*{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin: 0;
   padding: 0;
 }
-.fixed{
+.fixed {
   /* border-bottom: 0.1px solid rgb(0,100,120); venom color */
   border-bottom: 0.01px solid #36c9da;
 }
 .content-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    /* width: 300px; */
-    /* margin-right: 10px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  /* width: 300px; */
+  /* margin-right: 10px; */
 }
 
 .bg-image {
@@ -37,45 +39,30 @@
   background-size: cover;
   background-position: center;
   /* filter: blur(4px); */
+  top: 4%;
 }
 
 .content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        #005a64,
-        rgb(0,100,120)   
-    )!important;
+  background-image: linear-gradient(
+    to right,
+    #005a64,
+    rgb(0, 100, 120)
+  ) !important;
 }
 
-.scroll{
-  /* background-color: rgb(24, 124, 111); */
-  color: aliceblue;
-  border-radius: 50%;
-  text-align: center;
-}
-.scroll:hover{
-  cursor: pointer;
-}
-.scroll>b{
-  align-self: center;
-  position: relative;
-  top: 10px;
-  font-size: 40px;
-  font-weight: 900;
-}
-.footer{
+.footer {
   background-color: #000;
   color: bisque;
 }
 
-.lis>li{
+.lis > li {
   text-transform: uppercase;
   padding: 0 15px 0 15px;
   margin: 0 15px 0 15px;
-  font-family: 'Agency FB',serif,helvetica,'sans-serif';
+  font-family: "Agency FB", serif, helvetica, "sans-serif";
 }
 
-ul>li:hover{
+ul > li:hover {
   /* border-bottom: #005a64 2px solid; */
   color: #03a0a0;
 }
