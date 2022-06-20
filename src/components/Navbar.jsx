@@ -59,11 +59,12 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+{/*
       <ul>
         <li>
           <FaToggleOn size={38} />
         </li>
-      </ul>
+      </ul> */}
 
       {/* Hamburger */}
       <div
