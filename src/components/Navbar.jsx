@@ -18,7 +18,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#010101] text-[#ccc]">
+    <div className="relative w-full h-[80px] flex justify-between items-center px-4 bg-[#010101] text-[#ccc]">
       <Link
         to="home"
         smooth={true}
