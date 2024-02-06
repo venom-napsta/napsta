@@ -66,15 +66,16 @@ const Navbar = () => {
         </li>
       </ul> */}
 
-      {/* Hamburger */}
+      {/* Hamburger 
       <div
         onClick={handleClick}
         className="hover:cursor-pointer md:hidden z-10"
       >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
+      */}
 
-      {/* Mobile menu */}
+      {/* Mobile menu 
       <ul
         className={
           !nav
@@ -112,6 +113,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      */}
 
       {/* Social icons */}
       <div className="hidden lg:flex relative flex-col top-[35%] left-0">
