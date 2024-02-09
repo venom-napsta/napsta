@@ -58,62 +58,7 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-      </ul>
-{/*
-      <ul>
-        <li>
-          <FaToggleOn size={38} />
-        </li>
-      </ul> */}
-
-      {/* Hamburger 
-      <div
-        onClick={handleClick}
-        className="hover:cursor-pointer md:hidden z-10"
-      >
-        {!nav ? <FaBars /> : <FaTimes />}
-      </div>
-      */}
-
-      {/* Mobile menu 
-      <ul
-        className={
-          !nav
-            ? "hidden"
-            : "relative top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
-        }
-      >
-        <li className="py-6 text-3xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="py-6 text-3xl">
-          {" "}
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About Me
-          </Link>
-        </li>
-        <li className="py-6 text-3xl">
-          {" "}
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            My Skills
-          </Link>
-        </li>
-        <li className="py-6 text-3xl">
-          {" "}
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className="py-6 text-3xl">
-          {" "}
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-      </ul>
-      */}
+      
 
       {/* Social icons */}
       <div className="hidden lg:flex relative flex-col top-[35%] left-0">
@@ -128,6 +73,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+        </ul>
     </div>
   );
 };
