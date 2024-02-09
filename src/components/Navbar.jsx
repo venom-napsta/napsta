@@ -60,19 +60,6 @@ const Navbar = () => {
         </li>
       
 
-      {/* Social icons */}
-      <div className="hidden lg:flex relative flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[160px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1a1a1a]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/venom-napsta"
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-        </ul>
-      </div>
         </ul>
     </div>
   );
