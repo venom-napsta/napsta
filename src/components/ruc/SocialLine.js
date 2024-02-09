@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { MdOutgoingMail } from "react-icons/md";
 import { AiFillLinkedin } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 export default function SocialLine() {
   return (
@@ -36,11 +36,11 @@ export default function SocialLine() {
           <p className="flex justify-center align-middle my-2 p-2 space-x-5">
             <a
               className="text-xl linkText"
-              href="https://www.instagram.com/napstakid/"
+              href="https://www.linkedin.com/in/venom-napsta/"
               target="_blank"
               rel="noreferrer"
             >
-              <BsInstagram color="#0e6067" className="contactIcons" />
+              <BsGithub color="#0e6067" className="contactIcons" />
             </a>
           </p>
         </div>
