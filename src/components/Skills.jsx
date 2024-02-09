@@ -44,11 +44,11 @@ const Skills = () => {
             <p className="my-4">NODE JS</p>
           </div>
           <div className="shadow-md shadow-[rgb(0,100,120)] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Mongo} alt="mongo icon" />
+            <img className="w-20 mx-auto" src={Typescript} alt="mongo icon" />
             <p className="my-4">TypeScript</p>
           </div>
           <div className="shadow-md shadow-[rgb(0,100,120)] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={GitHub} alt="GH icon" />
+            <img className="w-20 mx-auto" src={Next} alt="GH icon" />
             <p className="my-4">Next.JS</p>
           </div>
           <div className="shadow-md shadow-[rgb(0,100,120)] hover:scale-110 duration-500">
