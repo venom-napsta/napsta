@@ -7,9 +7,9 @@ import ReactImg from "../assets/react.png";
 import Node from "../assets/node.png";
 import sklearn from "../assets/sklearn.png";
 import python from "../assets/python.png";
-import GitHub from "../assets/github.png";
+import Next from "../assets/next.png";
 // import tf from '../assets/tf.png';
-import Mongo from "../assets/mongo.png";
+import Typescript from "../assets/ts.png";
 
 const Skills = () => {
   return (
