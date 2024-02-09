@@ -7,7 +7,7 @@ import ReactImg from "../assets/react.png";
 import Node from "../assets/node.png";
 import sklearn from "../assets/sklearn.png";
 import python from "../assets/python.png";
-import Next from "../assets/nextjs.png";
+import Next from "../assets/next1.png";
 // import tf from '../assets/tf.png';
 import Typescript from "../assets/ts.png";
 
