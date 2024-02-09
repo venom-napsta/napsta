@@ -30,7 +30,7 @@ const About = () => {
                 <br /> This is my portifolio site.
                 <br />
                 <br />
-                Take a look around and don't hesitate to get in touch.
+                Please find attached contact info for communication.
               </small>
             </p>
             <br />
@@ -64,19 +64,8 @@ const About = () => {
               skills as a data scientist.
               <br />
               <br />
-              Currently, I’m working on the implementation of deep learning
-              algorithms to my existing ecommerce project built with React.JS.
-              <br />
-              <Link to="about" smooth={true} duration={500}>
-                <button
-                  className="text-[#0e6067] my-3 flex items-center hover:text-[#232]"
-                  href="#"
-                >
-                  Project Repo here...{" "}
-                </button>
-              </Link>
               The much respect I have for Open Source development, makes up the
-              intermediate experience I have in JavaScript and Python for both
+              intermediate experience I have in TypeScript and Python for both
               mobile and web development towards the field of{" "}
               <b>Data Science</b> and <b>Statisctical Research.</b>
             </p>
