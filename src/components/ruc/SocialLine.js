@@ -26,7 +26,7 @@ export default function SocialLine() {
           <p className="flex justify-center align-middle my-2 p-2 space-x-5">
             <a
               className="text-xl linkText"
-              href="https://www.linkedin.com/in/napsta-kid/"
+              href="https://www.linkedin.com/in/venom-napsta/"
               target="_blank"
               rel="noreferrer"
             >
@@ -36,7 +36,7 @@ export default function SocialLine() {
           <p className="flex justify-center align-middle my-2 p-2 space-x-5">
             <a
               className="text-xl linkText"
-              href="https://www.linkedin.com/in/venom-napsta/"
+              href="https://github.com/venom-napsta"
               target="_blank"
               rel="noreferrer"
             >
