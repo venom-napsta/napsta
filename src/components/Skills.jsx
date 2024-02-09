@@ -7,7 +7,7 @@ import ReactImg from "../assets/react.png";
 import Node from "../assets/node.png";
 import sklearn from "../assets/sklearn.png";
 import python from "../assets/python.png";
-import Next from "../assets/next1.png";
+import Next from "../assets/nextjs.png";
 // import tf from '../assets/tf.png';
 import Typescript from "../assets/ts.png";
 
@@ -58,6 +58,7 @@ const Skills = () => {
           <div className="shadow-md shadow-[rgb(0,100,120)] hover:scale-110 duration-500">
             <img className="w-20 h-25 mx-auto" src={sklearn} alt="SKlearn icon" />
             <p className="my-4">Scikit-learn</p>
+          </div>
           {/*
               <div className='shadow-md shadow-[rgb(0,100,120)] hover:scale-110 duration-500'>
                   <img className='w-20 mx-auto' src={tf} alt="HTML icon" />
